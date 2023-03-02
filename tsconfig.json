@@ -1,9 +1,15 @@
 {
-    "include": ["src/**/*.ts", "src/**/*.json"],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.json"
+    ],
     "compilerOptions": {
-        "target": "ES2022",
-        "module": "ESNext",
-        "moduleResolution": "node",
+        "target": "es2019",
+        "lib": [
+            "esnext"
+        ],
+        "module": "es2020",
+        "moduleResolution": "nodenext",
         "baseUrl": "./",
         "resolveJsonModule": true,
         "declaration": true,
@@ -15,7 +21,10 @@
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "skipLibCheck": true,
-        "typeRoots": ["node_modules/@types", "src/@types"]
+        "typeRoots": [
+            "node_modules/@types",
+            "src/@types"
+        ]
     },
     "ts-node": {
         "esm": true,
